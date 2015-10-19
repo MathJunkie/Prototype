@@ -17,6 +17,17 @@
             $('.collapsible').collapsible({
                 accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
             });
+
+            $.ajax({
+                url: 'https://blog.bomberus.de/wiki/doku.php?id=wiki:srs',
+                type: 'GET',
+                success: function(res) {
+                    console.log(res);
+                    var content = $(res.responseText).find('#dokuwiki__content').html();
+                    $("#embed").html(content);
+                }
+            });
+
         });
 
         $(function() {
@@ -34,6 +45,7 @@
 </head>
 <body>
     <div class="row container blue">
+        <div class="col s12" id="embed"></div>
         <div class="col s4 red lighten-3">
             <ul class="collapsible" data-collapsible="accordion">
                 <li>
