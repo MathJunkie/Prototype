@@ -3,63 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/joint.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.collapsible').collapsible({
-                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-            });
-
-            $.ajax({
-                url: 'https://blog.bomberus.de/wiki/doku.php?id=wiki:srs',
-                type: 'GET',
-                success: function(res) {
-                    console.log(res);
-                    var content = $(res.responseText).find('#dokuwiki__content').html();
-                    $("#embed").html(content);
-                }
-            });
-
-        });
-
-        $(function() {
-            $( ".drag" ).draggable({
-                appendTo:"body",
-                cursor: "move",
-                cursorAt: {top: 0, left: -20},
-                helper: function (event) {
-                    return $("<div>I'm a custom helper</div>");
-                }
-            });
-        });
-    </script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/joint.min.js"></script>
+    <script src="js/script.js"></script>
     <title>Prototype</title>
 </head>
-<body>
-    <div class="row container blue">
-        <div class="col s12" id="embed"></div>
-        <div class="col s4 red lighten-3">
-            <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="drag collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                    <div class="drag collapsible-header"><i class="material-icons">place</i>Second</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                    <div class="drag collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
+<body class="grey darken-1">
+<main>
+    <div class="row">
+        <div class="col s4 m3 l2 orange">
+            <ul>
+                <li><a id="drag_input" class="drag btn">Add Input</a></li>
+                <lI><a id="drag_plot" class="drag btn">Add Plot </a></lI>
             </ul>
         </div>
-        <div class="col s8 orange"></div>
+        <div id="canvas" class="col s8 m9 l10 blue-grey">
+
+        </div>
     </div>
+</main>
 </body>
 </html>
