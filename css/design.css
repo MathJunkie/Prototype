@@ -1,0 +1,105 @@
+#headline{
+
+    background-color: #0059bc;
+    width: auto;
+    height: 150px;
+}
+
+h1{
+    font-style: normal;
+    font-family: Century Gothic;
+    font-size: 60px;
+    color: white;
+    text-shadow: -3px 0 black, 0 1px black,
+    1px 0 black, 0 -3px black;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+h5{
+    font-style: normal;
+    font-family: Century Gothic;
+    font-size: 20px;
+    color: white;
+    text-shadow: -3px 0 black, 0 1px black,
+    1px 0 black, 0 -3px black;
+}
+
+.brand-logo{
+            height: 60px;
+            width: 60px;
+}
+
+.nav-wrapper{
+            background-color: #00b8d4;
+}
+
+#nav-mobile{
+            font-family: Century Gothic;
+            text-shadow: -2px 0 black, 0 1px black,
+            1px 0 black, 0 -2px black;
+}
+
+#tutorial{
+
+            font-family: Century Gothic;
+            text-shadow: -2px 0 black, 0 1px black,
+            1px 0 black, 0 -2px black;
+}
+
+#wrapper{
+            width: auto;
+            height: 525px;
+            margin-left: 0em;
+            margin-bottom: 0em;
+}
+
+#sidebar{
+            width: 200px;
+            height: 525px;
+}
+
+#output{
+            margin-left: 240px;
+            margin-top: -27em;
+            height: 390px;
+            width: 805px;
+}
+
+#input{
+            margin-left: 230px;
+            padding-top: 30px;
+
+}
+
+#footer {
+    text-align: center;
+}
+
+/* label color */
+.input-field label {
+    color: black;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: black;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: black;
+}
