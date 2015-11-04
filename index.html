@@ -16,13 +16,13 @@
     <header>
         <div id="headline">
             <br>
-        <h1 class="center-align">MathJunkie</h1>
-        <h5 class="center-align">Who said Math has to be difficult and ugly?</h5>
+        <h1 class="center-align shadow-text">MathJunkie</h1>
+        <h5 class="center-align shadow-text">Who said Math has to be difficult and ugly?</h5>
         </div>
 
         <nav>
             <div class="nav-wrapper">
-                <img src="images/Icon.png" class="brand-logo center" width="85" height="85"  ></img>
+                <img src="images/Icon.png" class="brand-logo center" alt="Logo"/>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="sass.html">Log In</a></li>
                     </ul>
@@ -33,23 +33,24 @@
         </nav>
     </header>
 
-    <main>
-        <div id="wrapper" class="row container red">
-            <div id="sidebar" class="col s6 yellow"><br><br><br><br><br><br><br><br><br><br>HIER STEHEN DANN <br> DIE FUNKTIONEN</div>
-
-               <div id="input">
-                <div class="input-field col s6 ">
-                    <input value="x^2 +2x-10" id="first_name2" type="text" class="validate">
-                    <label class="active" for="first_name2">Please type in your parameters</label>
+    <main class="row">
+        <div id="sidebar" style="padding-top:100px;"  class="col s2 yellow valign">HIER STEHEN DANN<br/> DIE FUNKTIONEN</div>
+        <div id="wrapper" class="col s10 row red">
+            <div id="content" class="col s10 row">
+                <div id="input">
+                    <div class="input-field">
+                        <input value="x^2 +2x-10" id="first_name2" type="text" class="validate">
+                        <label class="active" for="first_name2">Please type in your parameters</label>
+                    </div>
                 </div>
-               </div>
-            <div id="output" class="col s4 green">OUTPUT</div>
+                <div id="output" class="green">OUTPUT</div>
+            </div>
         </div>
 
     </main>
     <footer>
         <div class="footer-copyright cyan">
-            <div id="footer" class="container" >
+            <div class="container" >
                 © 2015 MathJunkie
             </div>
         </div>

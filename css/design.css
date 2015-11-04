@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 #headline{
 
     background-color: #0059bc;
@@ -5,24 +9,23 @@
     height: 150px;
 }
 
-h1{
+.shadow-text{
     font-style: normal;
     font-family: Century Gothic;
-    font-size: 60px;
+
     color: white;
     text-shadow: -3px 0 black, 0 1px black,
     1px 0 black, 0 -3px black;
-    margin-top: 0px;
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 0;
     margin-bottom: 5px;
 }
 
 h5{
-    font-style: normal;
-    font-family: Century Gothic;
     font-size: 20px;
-    color: white;
-    text-shadow: -3px 0 black, 0 1px black,
-    1px 0 black, 0 -3px black;
 }
 
 .brand-logo{
@@ -48,32 +51,29 @@ h5{
 }
 
 #wrapper{
-            width: auto;
-            height: 525px;
-            margin-left: 0em;
-            margin-bottom: 0em;
+            height: calc(100vh - 235px);
+            margin-left: 0;
+            margin-bottom: 0;
 }
 
 #sidebar{
-            width: 200px;
-            height: 525px;
+        height: calc(100vh - 235px);
 }
 
 #output{
-            margin-left: 40px;
-            padding-top: -190px;
-            height: 390px;
-            width: 805px;
+    height: 80%;
 }
 
 #input{
-            margin-left: 230px;
-            padding-top: 30px;
+      padding-top: 30px;
+      height: 20%;
 
 }
 
-#footer {
+footer {
+    margin-top: -20px;
     text-align: center;
+    height: 10px;
 }
 
 /* label color */
